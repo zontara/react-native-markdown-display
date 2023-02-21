@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamacup/react-native-markdown-display.git"
+    "url": "git+https://github.com/RonRadtke/react-native-markdown-display.git"
   },
   "keywords": [
     "react",
@@ -25,17 +25,17 @@
   "author": "Mient-jan Stelling and Tom Pickard + others from the community",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamacup/react-native-markdown-display/issues"
+    "url": "https://github.com/RonRadtke/react-native-markdown-display/issues"
   },
-  "homepage": "https://github.com/iamacup/react-native-markdown-display/",
+  "homepage": "https://github.com/RonRadtke/react-native-markdown-display",
   "dependencies": {
-    "css-to-react-native": "^3.0.0",
+    "css-to-react-native": "^3.2.0",
     "markdown-it": "^13.0.1",
     "prop-types": "^15.7.2",
     "react-native-fit-image": "^1.5.5"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
+    "react": ">=16.2.0",
     "react-native": ">=0.50.4"
   },
   "devDependencies": {
@@ -44,8 +44,8 @@
     "@react-native-community/eslint-config": "^1.1.0",
     "@types/markdown-it": "^10.0.1",
     "@types/react-native": ">=0.50.0",
-    "@typescript-eslint/parser": "^2.32.0",
-    "eslint": "^7.0.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": ">=7.0.0",
     "pre-commit": "1.2.2",
     "typescript": "^3.8.3"
   }
