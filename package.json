@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint --fix --cache ./src"
+    "lint": "eslint --fix --cache ./src"
   },
   "pre-commit": [
     "lint"
@@ -22,7 +22,7 @@
     "commonmark",
     "markdown-it"
   ],
-  "author": "Mient-jan Stelling and Tom Pickard + others from the community",
+  "author": "Michael Lohmann, Daniel Maslowski, Ron Radtke and maintainers of the original library",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RonRadtke/react-native-markdown-display/issues"
@@ -45,8 +45,16 @@
     "@types/markdown-it": "^10.0.1",
     "@types/react-native": ">=0.50.0",
     "@typescript-eslint/parser": "^5.53.0",
-    "eslint": ">=7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
     "pre-commit": "1.2.2",
     "typescript": "^3.8.3"
+  },
+  "directories": {
+    "doc": "doc"
   }
 }
