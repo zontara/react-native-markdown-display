@@ -24,7 +24,7 @@ npm install -S react-native-markdown-display
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const copy = `# h1 Heading 8-)
 
@@ -462,7 +462,7 @@ Identify the new components and integrate the plugin with a rendered component. 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt }from '@ronradtke/react-native-markdown-display';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -528,7 +528,7 @@ We need to create the **render rules** and **styles** to handle this new **'vide
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt }from '@ronradtke/react-native-markdown-display';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -615,7 +615,7 @@ And all of the video properties needed to render something meaningful are on the
 You can do some additional debugging of what the markdown instance is spitting out like this:
 
 ```jsx
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt }from '@ronradtke/react-native-markdown-display';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -847,7 +847,7 @@ Think of the implementation like applying styles in CSS. changes to the `body` e
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const copy = `
 This is some text which is red because of the body style, which is also really small!
@@ -910,7 +910,7 @@ Styles are used to override how certain rules are styled. The existing implement
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const styles = StyleSheet.create({
   heading1: {
@@ -984,7 +984,7 @@ Rules are used to specify how you want certain elements to be displayed. The exi
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const rules = {
     heading1: (node, children, parent, styles) =>
@@ -1093,7 +1093,7 @@ It is possible to overwrite this behaviour in one of two ways:
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display/)`;
 
@@ -1145,7 +1145,7 @@ Something like this with `yourCustomHandlerFunctionOrLogicHere`:
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdownfrom '@ronradtke/react-native-markdown-display';
 
 const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display/)`;
 
@@ -1196,7 +1196,7 @@ This example will stop images and links.
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt }from '@ronradtke/react-native-markdown-display';
 
 const copy = `
 # This heading will show with formatting
@@ -1240,7 +1240,7 @@ It is possible to need to pre-process the data outside of this library ([related
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown, { MarkdownIt, tokensToAST, stringToTokens } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt, tokensToAST, stringToTokens }from '@ronradtke/react-native-markdown-display';
 
 const markdownItInstance = MarkdownIt({typographer: true});
 
