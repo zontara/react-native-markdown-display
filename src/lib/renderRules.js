@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Pressable, View, Platform, StyleSheet} from 'react-native';
 import FitImage from 'react-native-fit-image';
+import SyntaxHighlighter from 'react-native-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/styles/hljs';
 
 import openUrl from './util/openUrl';
 import hasParents from './util/hasParents';
@@ -185,7 +187,7 @@ const renderRules = (Text) => ({
   },
   fence: (node, children, parent, styles, inheritedStyles = {}) => {
     // we trim new lines off the end of code blocks because the parser sends an extra one.
-    let {content} = node;
+    let {sourceInfo, content} = node;
 
     if (
       typeof node.content === 'string' &&
@@ -195,9 +197,16 @@ const renderRules = (Text) => ({
     }
 
     return (
-      <Text key={node.key} style={[inheritedStyles, styles.fence]}>
+      <SyntaxHighlighter 
+        language={sourceInfo}
+        style={docco}
+        highlighter={"prism" || "hljs"}
+      >
         {content}
-      </Text>
+      </SyntaxHighlighter>
+      // <Text key={node.key} style={[inheritedStyles, styles.fence]}>
+      //   {content}
+      // </Text>
     );
   },
 
